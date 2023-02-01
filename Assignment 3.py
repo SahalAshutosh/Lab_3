@@ -10,8 +10,8 @@ data = {
 df = pd.DataFrame(data)
 
 
-class Employee:
-    def _init_(self, data):
+class emp:
+    def __init__(self, data):
         self.data = data
 
     def sort_age(self):
@@ -27,7 +27,7 @@ class Employee:
         return self.sdf
 
 
-ob = Employee(df)
+object = emp(df)
 
 choice = 1
 
@@ -38,11 +38,11 @@ while choice:
     print("3. Salary")
     choice = int(input("Enter your choice:"))
     if choice == 1:
-        print(ob.sort_age())
+        print(object.sort_age())
     elif choice == 2:
-        print(ob.sort_name())
+        print(object.sort_name())
     elif choice == 3:
-        print(ob.sort_salary())
+        print(object.sort_salary())
     elif choice == 0:
         print("Exiting")
     else:
